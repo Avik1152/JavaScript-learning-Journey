@@ -25,7 +25,7 @@ const COLOR_ORANGE = "#FF7F00";
 // ...when we need to pick a color
 // When reading the code, COLOR_ORANGE is much more meaningful than #FF7F00.
 let color = COLOR_ORANGE;
-alert(color); // #FF7F00
+console.log(color); // #FF7F00
 
 let admin, name;
 name = "John";
