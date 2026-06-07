@@ -31,7 +31,7 @@ console.log(`Amount to Pay: ₹${ammount_pay_after_Discount}`);*/
 // Subject 1: Math
 // Subject 2: Science
 // Subject 3: English
-let mathObtainedMarks = parseInt(prompt("Write the Obtained marks of Math"));
+/*let mathObtainedMarks = parseInt(prompt("Write the Obtained marks of Math"));
 let scienceObtainedMarks = parseInt(
   prompt("Write the Obtained marks of Science"),
 );
@@ -54,4 +54,17 @@ if (averageOfTotalObtainedMarks >= 40) {
 } else {
   let resultFail = "Fail";
   console.log(`Result: ${resultFail}`);
-}
+}*/
+
+// Real-Life Problem 3 — Bus Ticket System
+// Bus fare = ₹15 per person
+let busFarePerPerson = 15;
+// Ask user: How many tickets do you want?
+let userCountForTickets = parseInt(prompt("How many tickets do you want?"));
+// Calculate total cost
+let totalTicketCostOfAllUser = busFarePerPerson * userCountForTickets;
+// Print:
+// "Tickets: [number]"
+console.log(`Total Ticket Count: ${userCountForTickets}`);
+// "Total Cost: ₹[amount]"
+console.log(`Total cost of all the tickets: ${totalTicketCostOfAllUser}`);
