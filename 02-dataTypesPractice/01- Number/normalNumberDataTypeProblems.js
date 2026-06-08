@@ -1,8 +1,11 @@
 // ****Numbers****
-let message = "Hello";
-message = 12345;
+let n = 123;
+n = 12.345;
 
-// console.log(message);
+console.log(n + 4);
+console.log(n - 4);
+console.log(n * 4);
+console.log(n / 4);
 
 // alert(1 / 0); //Infinity
 // alert(Infinity); //Infinity
