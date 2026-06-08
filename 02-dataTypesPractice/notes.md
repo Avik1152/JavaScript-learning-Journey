@@ -10,8 +10,7 @@
 
   console.log(message);
   ```
-
-// console.log(message);
+  
   There are eight basic data types in JavaScript.
 
 1. Seven `primitive` data types:
