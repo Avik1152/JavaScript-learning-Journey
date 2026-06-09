@@ -50,3 +50,14 @@ To get a character, use square brackets [] or call the method str.at().
 
 * `.at(-1)` means the last character.
 * `.at(-2)` is the one before it.
+
+ *Strings are immutable* Strings can’t be changed in JavaScript. It is impossible to change a character.
+
+    * Create a whole new string and assign it to str instead of the old one. 
+
+ *Changing the Case* Methods toLowerCase() and toUpperCase() change the case.
+
+    ```javascript
+         //example: String Normal Problem 4 - Strings are immutable and Changing The Case
+    ```
+    
