@@ -41,7 +41,7 @@ let immutable_str = "Hello";
 // let mutable_arr = [10, 15, 20, 25, 30]; // Arrays are mutable.
 
 immutable_str[0] = "h"; // error
-console.log(immutable_str); // doesn't work
+// console.log(immutable_str); // doesn't work
 
 //create a whole new string and assign it to str instead of the old one.
 immutable_str =
@@ -51,12 +51,30 @@ immutable_str =
   immutable_str[3] +
   immutable_str[4];
 // mutable_arr[0] = 11;
-console.log(immutable_str.toUpperCase());
-console.log(
-  immutable_str[0].toLowerCase() +
-    immutable_str[1].toUpperCase() +
-    immutable_str[2] +
-    immutable_str[3].toUpperCase() +
-    immutable_str[4],
-);
+// console.log(immutable_str.toUpperCase());
+// // console.log(
+//   immutable_str[0].toLowerCase() +
+//     immutable_str[1].toUpperCase() +
+//     immutable_str[2] +
+//     immutable_str[3].toUpperCase() +
+//     immutable_str[4],
+// );
 // console.log(mutable_arr);
+
+//String Normal Problem 5 - Searching for a substring and Extracting a substring
+let str = "Hello World";
+console.log(str.indexOf("World")); //6
+console.log(str.includes("world")); //false
+console.log(str.indexOf("World", 1)); //6
+
+let subStr = "I learning JavaScript";
+
+console.log(subStr.includes("I")); //true
+console.log(subStr.includes("i")); //false
+
+let str3 = "Hello World";
+console.log(str3.slice(0, 5)); //Hello
+console.log(str3.slice(6)); //World
+console.log(str3.slice(-5)); //World
+console.log(str3.slice(0, -6)); //Hello
+console.log(str3.substring(-11, -6)); //Hello

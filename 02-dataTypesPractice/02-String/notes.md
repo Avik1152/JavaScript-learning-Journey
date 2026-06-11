@@ -61,3 +61,10 @@ To get a character, use square brackets [] or call the method str.at().
          //example: String Normal Problem 4 - Strings are immutable and Changing The Case
     ```
     
+## Searching for a substring
+
+To look for a substring, use: `indexOf`, or `includes/startsWith/endsWith` for simple checks.
+
+* `indexOf(substr, pos)` -> substr(sub string) and pos(position). starting from the given position(pos) and returns the position where the match was found or nothing can be found return -1.
+
+To get a *substring*, use: slice or substring.
