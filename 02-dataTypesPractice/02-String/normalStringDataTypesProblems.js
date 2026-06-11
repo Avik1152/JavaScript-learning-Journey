@@ -63,18 +63,42 @@ immutable_str =
 
 //String Normal Problem 5 - Searching for a substring and Extracting a substring
 let str = "Hello World";
-console.log(str.indexOf("World")); //6
-console.log(str.includes("world")); //false
-console.log(str.indexOf("World", 1)); //6
+// console.log(str.indexOf("World")); //6
+// console.log(str.includes("world")); //false
+// console.log(str.indexOf("World", 1)); //6
 
 let subStr = "I learning JavaScript";
 
-console.log(subStr.includes("I")); //true
-console.log(subStr.includes("i")); //false
+//  console.log(subStr.includes("I")); //true
+//  console.log(subStr.includes("i")); //false
 
 let str3 = "Hello World";
-console.log(str3.slice(0, 5)); //Hello
-console.log(str3.slice(6)); //World
-console.log(str3.slice(-5)); //World
-console.log(str3.slice(0, -6)); //Hello
-console.log(str3.substring(-11, -6)); //Hello
+//   console.log(str3.slice(0, 5)); //Hello
+//   console.log(str3.slice(6)); //World
+//   console.log(str3.slice(-5)); //World
+//   console.log(str3.slice(0, -6)); //Hello
+//   console.log(str3.substring(-11, -6)); //Hello
+
+//String Normal Problem 6 - Type conversion for String
+let convertNumToStr = 12;
+let convertNullToStr = null;
+
+//1. The Main Method: `String()`
+let typeConversionNumtoStr2 = String(convertNumToStr);
+console.log(typeof typeConversionNumtoStr2); //string
+console.log(typeConversionNumtoStr2); //"12"
+
+//2. Using Main method `String()`
+let typeConversionNulltoStr = String(convertNullToStr);
+console.log(typeof typeConversionNulltoStr); //string
+console.log(typeConversionNulltoStr); //"null"
+
+//2. Using `toString()` method
+let typeConversionNumtoStr1 = convertNumToStr.toString();
+console.log(typeof typeConversionNumtoStr1); //string
+console.log(typeConversionNumtoStr1); //"12"
+
+//3. Using `toString()` method
+let typeConversionNulltoStr2 = convertNullToStr.toString();
+console.log(typeof typeConversionNulltoStr2); //string
+console.log(typeConversionNulltoStr2); //TypeError: Cannot read properties of null (reading 'toString')
