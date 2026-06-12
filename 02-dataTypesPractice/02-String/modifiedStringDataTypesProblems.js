@@ -17,3 +17,48 @@ let sentence = "JavaScript is the language of the web.";
 // console.log(sentence.charAt(11)); //  i
 
 // String Modified Problems 2 - Unicode Explorer
+
+let word = "Hello😎";
+
+// 1) Print total length
+// console.log(word.length);
+// 2) Print charCodeAt(0)  → Unicode of 'H'
+// console.log(word.charCodeAt(0));
+// 3) Print charCodeAt(1)  → Unicode of 'e'
+// console.log(word.charCodeAt(1));
+// 4) Spread the word into array using [...word]
+// console.log([...word]);
+// 5) Print last character using [...word] with .length
+
+//Spread the string into an array of individual characters
+const charArray = [...word];
+//Use the array's length minus 1 to get the last character
+const lastChar = charArray[charArray.length - 1];
+
+// console.log(lastChar); // Output: "😎"
+
+// Predict: will .length give 6 or 7 for "Hello😎"?
+//7
+// Write your prediction as comment, then check
+//7
+//72
+//101
+//['H', 'e', 'l', 'l', 'o', '😎']
+//😎
+
+// String Modified Problems 3 - String Immutability Test
+
+let myName = "john";
+
+// Try to change first letter to capital 'J'
+console.log(myName[0].toUpperCase()); //J
+
+// directly like: myName[0] = "J"
+myName[0] = "J";
+// Check if it worked
+console.log(myName); //john (not changed, because string is immutable)
+
+// Then do it the CORRECT way:
+// Build new string using myName[1], myName[2]... etc
+// Print the corrected name
+console.log(myName[0].toUpperCase() + myName[1] + myName[2] + myName[3]); // John
