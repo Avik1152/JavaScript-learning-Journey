@@ -82,3 +82,7 @@ while (true) {
   paragraph = paragraph.replace(target, "ut"); // Replace "at" with "ut" to avoid finding the same instance again
 }
 // console.log(paragraph);
+
+//***to differce meaning of -1 hare***
+console.log(paragraph.indexOf("z")); //-1 (hare -1 mean the character is not found.)
+console.log(paragraph.at(-1)); //Hare -1 mean the last caharacters.
