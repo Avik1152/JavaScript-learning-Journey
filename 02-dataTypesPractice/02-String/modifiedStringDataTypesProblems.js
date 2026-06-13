@@ -84,5 +84,23 @@ while (true) {
 // console.log(paragraph);
 
 //***to differce meaning of -1 hare***
-console.log(paragraph.indexOf("z")); //-1 (hare -1 mean the character is not found.)
-console.log(paragraph.at(-1)); //Hare -1 mean the last caharacters.
+// console.log(paragraph.indexOf("z")); //-1 (hare -1 mean the character is not found.)
+// console.log(paragraph.at(-1)); //Hare -1 mean the last caharacters.
+
+// String Problem 7 — String Case Converter
+
+let mixedText = "hElLo wOrLd";
+
+// 1) Print full string in UPPERCASE
+console.log(mixedText.toUpperCase()); // HELLO WORLD
+// 2) Print full string in lowercase
+console.log(mixedText.toLowerCase()); // hello world
+// 3) Print length of string
+console.log(mixedText.length); //11
+// 4) Does it include "wOrLd"?
+console.log(mixedText.includes("wOrLd")); //true
+// 5) Does it include "world"? (lowercase)
+console.log(mixedText.includes("world")); //false
+// Predict output of 4 and 5 before running — write in comment
+// 4) true
+// 5) false
