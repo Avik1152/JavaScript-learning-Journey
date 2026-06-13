@@ -77,8 +77,8 @@ while (true) {
   if (index === -1) {
     break;
   }
-  console.log(index);
+  // console.log(index);
   position = index + 1;
-  paragraph = paragraph.replace(target, "ut");
+  paragraph = paragraph.replace(target, "ut"); // Replace "at" with "ut" to avoid finding the same instance again
 }
-console.log(paragraph);
+// console.log(paragraph);
