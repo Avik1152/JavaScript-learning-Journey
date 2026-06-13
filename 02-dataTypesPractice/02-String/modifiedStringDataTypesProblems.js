@@ -51,14 +51,34 @@ const lastChar = charArray[charArray.length - 1];
 let myName = "john";
 
 // Try to change first letter to capital 'J'
-console.log(myName[0].toUpperCase()); //J
+// console.log(myName[0].toUpperCase()); //J
 
 // directly like: myName[0] = "J"
 myName[0] = "J";
 // Check if it worked
-console.log(myName); //john (not changed, because string is immutable)
+// console.log(myName); //john (not changed, because string is immutable)
 
 // Then do it the CORRECT way:
 // Build new string using myName[1], myName[2]... etc
 // Print the corrected name
-console.log(myName[0].toUpperCase() + myName[1] + myName[2] + myName[3]); // John
+// console.log(myName[0].toUpperCase() + myName[1] + myName[2] + myName[3]); // John
+
+// String Problem 4 — indexOf Loop Challenge
+
+let paragraph = "the cat sat on the mat near the vat";
+let target = "at";
+
+// Using the while loop pattern from your practice today,
+// find ALL positions where "at" appears
+// Print each position
+let position = 0;
+while (true) {
+  let index = paragraph.indexOf(target, position);
+  if (index === -1) {
+    break;
+  }
+  console.log(index);
+  position = index + 1;
+  paragraph = paragraph.replace(target, "ut");
+}
+console.log(paragraph);
