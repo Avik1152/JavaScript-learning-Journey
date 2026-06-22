@@ -170,3 +170,16 @@ console.log(message.replace("Java", "JavaScript"));
 console.log(message.replaceAll("Java", "JavaScript"));
 
 // Hint: .replace() and .replaceAll()
+
+// String Problem 12 — String Trim & Repeat
+
+let messyInput = "   Hello World   ";
+
+// 1) Print original string with its length
+console.log(messyInput.length);
+// 2) Remove spaces from both sides using .trim()
+// 3) Print trimmed string with its new length
+console.log(messyInput.trim().length);
+// 4) Now repeat the word "Ha" 5 times using .repeat()
+// 5) Print the repeated result
+console.log("Ha".repeat(5));
