@@ -104,3 +104,27 @@ console.log(mixedText.includes("world")); //false
 // Predict output of 4 and 5 before running — write in comment
 // 4) true
 // 5) false
+
+// String Problem 8 — Multiline String Builder
+
+// Build a student ID card using template literal (backtick)
+// It should print exactly like this:
+let student1_Name = "Avik";
+let student1_Roll = 101;
+let student1_Course = "Diploma CS";
+let student1_City = "Kolkata";
+// ========================
+// Name    : Your Name
+// Roll No : 101
+// Course  : Diploma CS
+// City    : Kolkata
+// ========================
+console.log(`
+  =========================
+  Name    : ${student1_Name}
+  Roll No : ${student1_Roll}
+  Course  : ${student1_Course}
+  City    : ${student1_City}
+  =========================`);
+// Store each value in a separate variable first
+// Then build the card using one template literal
