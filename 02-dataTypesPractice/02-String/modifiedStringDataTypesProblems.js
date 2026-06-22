@@ -141,3 +141,19 @@ console.log(fullName.slice(7, 10)); // Man
 // 3) Print both using console.log
 
 // Hint: use .slice(startIndex, endIndex)
+
+// String Problem 10 — Escape Character Practice
+
+// Print these 4 lines using console.log:
+// 1) She said "Hello!"
+console.log('She said "Hello"');
+// 2) It's a beautiful day
+console.log("It\'s a beautiful day");
+// 3) Line1
+//    Line2
+//    Line3   (using \n)
+console.log(
+  "I love JavaScript \n In the InternShip my selection is \n MERN stack ",
+);
+// 4) The file path is: C:\Users\File\Documents
+console.log("The file path is: C:\\Users\\File\\Documents");
