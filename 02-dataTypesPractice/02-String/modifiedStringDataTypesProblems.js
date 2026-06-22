@@ -128,3 +128,16 @@ console.log(`
   =========================`);
 // Store each value in a separate variable first
 // Then build the card using one template literal
+
+// String Problem 9 — String Slicer
+
+let fullName = "Spider Man";
+
+// Using index positions:
+// 1) Extract only "Spider" from fullName
+console.log(fullName.slice(0, 6)); //  Spider
+// 2) Extract only "Man" from fullName
+console.log(fullName.slice(7, 10)); // Man
+// 3) Print both using console.log
+
+// Hint: use .slice(startIndex, endIndex)
