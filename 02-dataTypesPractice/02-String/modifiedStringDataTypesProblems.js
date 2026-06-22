@@ -157,3 +157,16 @@ console.log(
 );
 // 4) The file path is: C:\Users\File\Documents
 console.log("The file path is: C:\\Users\\File\\Documents");
+
+// String Problem 11 — String Replace Challenge
+
+let message = "I love Java. Java is great. Java is powerful.";
+
+// 1) Replace first "Java" with "JavaScript"
+// 2) Print result
+console.log(message.replace("Java", "JavaScript"));
+// 3) Now replace ALL "Java" with "JavaScript"
+// 4) Print result
+console.log(message.replaceAll("Java", "JavaScript"));
+
+// Hint: .replace() and .replaceAll()
