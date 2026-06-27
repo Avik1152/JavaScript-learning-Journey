@@ -99,6 +99,70 @@ console.log(typeof typeConversionNumtoStr1); //string
 console.log(typeConversionNumtoStr1); //"12"
 
 //3. Using `toString()` method
-let typeConversionNulltoStr2 = convertNullToStr.toString();
+// let typeConversionNulltoStr2 = convertNullToStr.toString();
 console.log(typeof typeConversionNulltoStr2); //string
-console.log(typeConversionNulltoStr2); //TypeError: Cannot read properties of null (reading 'toString')
+// console.log(typeConversionNulltoStr2); //TypeError: Cannot read properties of null (reading 'toString')
+
+// String Normal Problem 7 - Uppercase the first character
+/*problem: Write a function ucFirst(str) that returns the string str with the uppercased first character, for instance: 
+          ucFirst("john") == "John";*/
+function ucFirst(str) {
+  if (!str) return str;
+  return str[0].toUpperCase() + str.slice(1);
+}
+console.log(ucFirst("john") == "John");
+console.log(ucFirst("john"));
+
+// String Normal Problem 8 - Check for spam
+
+/*problem: Write a function checkSpam(str) that returns true if str contains 'viagra' or 'XXX', otherwise false. The function must be case-insensitive.*/
+
+function checkSpam(str) {
+  let lowerstr = str.toLowerCase();
+
+  return lowerstr.includes("viagra") || lowerstr.includes("xxx");
+}
+
+console.log(checkSpam("viagra"));
+console.log(checkSpam("buy ViAgRA now"));
+console.log(checkSpam("free xxxxx"));
+console.log(checkSpam("innocent rabbit"));
+
+// String Normal Problem 9 - Truncate the text
+
+/*problem: Create a function truncate(str, maxlength) that checks the length of the str and, if it exceeds maxlength, replaces the end of str with the ellipsis character "…", to make its length equal to maxlength.*/
+
+function truncate(str, maxlength) {
+  if (str.length > maxlength) {
+    return str.slice(0, maxlength - 1) + "...";
+  } else {
+    return str;
+  }
+}
+
+console.log(truncate("What I'd like to tell on this topic is:", 20));
+console.log(truncate("I love JavaScript", 10));
+console.log(truncate("I love JavaScript", 15));
+console.log(truncate("I love JavaScript", 20));
+
+// String Normal Problem 10 - Extract the money
+
+/*problem: We have a cost in the form "$120". That is: That is: the dollar sign goes first, and then the number.
+
+Your task is to create a function extractCurrencyValue(str) that would extract the numeric value from such string and return it. The example:
+
+alert( extractCurrencyValue('$120') === 120 ); // true*/
+
+//This function is logicaly write as per problem.
+function extractCurrencyValue(str) {
+  return parseInt(str.slice(1, str.length));
+}
+
+console.log(extractCurrencyValue("$120.99") === 120.99); //false
+console.log(extractCurrencyValue("$120") === 120); //true
+// But This function is offically write as per problem becouse when we write 120.00 it also give true.
+function extractCurrencyValue2(str2) {
+  return +str2.slice(1);
+}
+
+console.log(extractCurrencyValue2("$120.99") === 120.99); //true
