@@ -45,3 +45,9 @@ let division = "6" / "2"; // 3 (Strings automatically converted to numbers for d
 let subtraction = "5" - 1; // 4 (String automatically converted for subtraction)
 
 console.log(division, subtraction);
+
+//More way to write numbers in JavaScript
+let billion = 1000000000; // 1 billion
+let billionWithUnderscores = 1_000_000_000; // 1 billion (using underscores for readability)
+
+console.log(billion, billionWithUnderscores); // Both will output: 1000000000
