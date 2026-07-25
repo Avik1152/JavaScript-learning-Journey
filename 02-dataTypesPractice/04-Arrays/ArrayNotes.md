@@ -18,6 +18,26 @@ let arr = new Array("Apple", "Pear");      // Avoid! See why below
         fruits.at(-1); // "Plum" (Same as fruits[fruits.length - 1])   
     ```
 
+* **Type of Arrays**
+  * Arrays can be classified in two ways:
+    1. On the basis of Size
+    2. On the basis of Dimensions
+    ![Type of Arrays](typesofArray.png)
+  * 1- *Types of Arrays on the basis of Size*
+    * *Dynamic Sized Arrays*: The size of the array changes as per user requirements during execution of code so the coders do not have to worry about sizes. They can add and removed the elements as per the need. The memory is mostly dynamically allocated and de-allocated in these arrays.
+
+    ```javascript
+    // Dynamic Sized Array
+    let arr = new Array();
+    ```
+  
+  * 2- *Types of Arrays on the basis of Dimensions*
+    * *One-dimensional Array(`1-D Array`)*: You can imagine a 1d array as a row, where elements are stored one after another.
+    ![1-D Array](1-D%20Array.png)
+    * *Multi-dimensional Array*: A multi-dimensional array is an array with more than one dimension. We can use multidimensional array to store complex data in the form of tables, etc. We can have `2-D arrays`, `3-D arrays`, `4-D arrays` and so on.
+      * *Two-Dimensional Array(`2-D Array` or Matrix)*: `2-D` Multidimensional arrays can be considered as an array of arrays or as a matrix consisting of rows and columns.
+      ![2-D Array](2-D%20Array.png)
+
 **Queue & Stack Operations**:
 JavaScript arrays can act as both queues (FIFO) and stacks (LIFO).
 
@@ -89,7 +109,14 @@ JavaScript arrays can act as both queues (FIFO) and stacks (LIFO).
 * **To iterate over elements**
   * `forEach(func)` ➔ calls func for every element, does not return anything.
 * **To transform the array**
-  * `map(func)` ➔ creates a new array from results of calling `func` for every element.
+  * `map(func)` ➔ creates a new array from results of calling `func` for every element. The `arr.map` method is one of the most useful and often used. It calls the function for each element of the array and returns the array of results. The syntax is:
+
+    ```javascript
+    let result = arr.map(function(item, index, array) {
+      // returns the new value instead of item
+    });
+    ```
+
   * `sort(func)` ➔ sorts the array in-place, then returns it.
   * `reverse()` ➔ reverses the array in-place, then returns it.
   * `split/join` ➔ convert a string to array and back.

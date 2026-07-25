@@ -136,11 +136,42 @@ let sumArr = [1, 2, 3, 4];
 }*/
 
 sumArr.forEach((element) => {
-  console.log(element + 2);
+  // console.log(element + 2);
 });
 
-console.log(sumArr);
-// console.log(arrConcatenate.concat(arrayLike));
+// console.log(sumArr);
+
+// **** fixed sized array ****
+let arrfixed = new Array(3);
+arrfixed[0] = "Avik";
+arrfixed[1] = "Aksahy";
+arrfixed[2] = "Ashish";
+arrfixed[3] = "Avshek";
+// console.log(arrfixed);
+
+// **** 2-D Array ****
+// 1. Creating a 2-D Array (3 rows, 4 columns)
+const seatingChart = [
+  ["Alice", "Bob", "Charlie", "David"], // Row 0
+  ["Emily", "Frank", "Grace", "Henry"], // Row 1
+  ["Ivy", "Jack", "Kevin", "Leo"], // Row 2
+];
+
+// 2. Accessing a specific element
+// Syntax: array[row_index][column_index]
+// const student = seatingChart[1][2]; // Row 1, Column 2
+// console.log("Student at Row 1, Col 2:", student); // Output: Grace
+
+// 3. Modifying an element
+seatingChart[2][1] = "John"; // Changing "Jack" to "John" in Row 2, Column 1
+
+// 4. Printing the entire grid using a loop
+// console.log("\n--- Full Seating Chart ---");
+for (let i = 0; i < seatingChart.length; i++) {
+  // seatingChart[i].join(" | ") joins the elements of the row with a separator
+  // console.log(`Row ${i}:`, seatingChart[i].join(" | "));
+}
+
 // *+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*
 
 // **** Normal Array Problems 1 — ****
