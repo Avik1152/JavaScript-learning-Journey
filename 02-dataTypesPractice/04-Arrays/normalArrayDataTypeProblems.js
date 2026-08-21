@@ -172,6 +172,42 @@ for (let i = 0; i < seatingChart.length; i++) {
   // console.log(`Row ${i}:`, seatingChart[i].join(" | "));
 }
 
+/*let tempInCelsius = [20, 25, 35];
+
+let tempInFahrenheit = tempInCelsius.map(function (eliment) {
+  return (eliment * 9) / 5 + 32;
+});
+
+console.log(tempInFahrenheit);
+
+// let tempInCelsius = [20, 25, 35];
+let tempInFahrenheit2 = []; // 1. Declare an empty array
+
+tempInCelsius.forEach(function (element) {
+  let fahrenheit = (element * 9) / 5 + 32;
+  tempInFahrenheit2.push(fahrenheit); // 2. Push converted value
+});
+
+console.log(tempInFahrenheit2);
+console.log(tempInCelsius);
+
+let ageOfCelection = [12, 18, 25, 5, 30];
+
+let celectAge = ageOfCelection.filter((element) => {
+  return element > 18;
+});
+
+console.log(celectAge);
+
+let prices = [120, 250, 80, 450, 30];
+
+let sum = prices.reduce((accumulator, current) => {
+  return (accumulator += current);
+});
+console.log(sum);
+// console.log(ageOfCelection);
+// Output: [68, 77, 95]*/
+
 // *+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*
 
 // **** Normal Array Problems 1 — ****
@@ -235,3 +271,43 @@ console.log(sumInput());*/
 /*let maximalSubArray = [1, -2, 3, 4, -9, 6];
 
 function getMaxSubSum() {}  *********Incomplete for letter*/
+
+// *+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*
+
+// **** Normal Array Problems 5 - Map to names ****
+
+/*let john = { name: "John", age: 25 };
+let pete = { name: "Pete", age: 30 };
+let mary = { name: "Mary", age: 28 };
+
+let users = [john, pete, mary];
+
+let names = users.map((item) => {
+  return item.name;
+});
+
+console.log(names); // John, Pete, Mary*/
+
+// **** Normal Array Problems 5 - Map to Objects ****
+
+/*let john = { name: "John", surname: "Smith", id: 1 };
+let pete = { name: "Pete", surname: "Hunt", id: 2 };
+let mary = { name: "Mary", surname: "Key", id: 3 };
+
+let users = [john, pete, mary];
+
+let usersMapped = users.map((item, fullName, id) => {
+  return { fullName: item.name.concat(" ", item.surname), id: item.id };
+});
+
+
+console.log(usersMapped);
+console.log(usersMapped[0].id); // 1
+console.log(usersMapped[0].fullName); // John Smith*/
+/* 
+usersMapped = [
+  { fullName: "John Smith", id: 1 },
+  { fullName: "Pete Hunt", id: 2 },
+  { fullName: "Mary Key", id: 3 }
+]
+*/
